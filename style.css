@@ -150,3 +150,185 @@ footer {
         background-attachment: scroll;
     }
 }
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    box-sizing: border-box; /* Hace que el padding no aumente el tamaño total de las cajas*/
+}
+
+body {
+    background-color: #FFF8EF; /* Fondo Blanco Crema */
+    color: #333;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    display: grid; /* Se activa Grid para organizar las cajas de la web*/
+    /* Definir el nombre de cada zona para colocarlas después */
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "nav aside"
+        "footer footer";
+    grid-template-columns: 200px 1fr; /* Columna de 200 pixeles para el menú lateral */
+    min-height: 100vh;
+}
+
+/* COMPONENTES OBLIGATORIOS */
+header {
+    grid-area: header; /* Ocupa el área 'header' definida arriba */
+    background-color: #1F4E79; /* Azul */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-bottom: 5px solid #FF6F61; /* Línea decorativa en color Coral */
+}
+
+header img {
+    max-width: 150px;
+}
+
+nav {
+    grid-area: nav; /* Ocupa el área 'nav' definida arriba */
+    background-color: #2E8B57; /* Verde */
+    padding: 30px 15px;
+}
+
+nav a {
+    color: #FFF8EF;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    display: block; /* Hace que el enlace ocupe toda la línea */
+    padding: 10px;
+    transition: background 0.3s; /* Animación suave al pasar el ratón por las opciones*/
+}
+
+nav a:hover {
+    background-color: #1F4E79; /* Al pasar el ratón, el verde cambia a azul */
+}
+
+main {
+    grid-area: main; /* Ocupa el área 'main' definida arriba */
+    padding: 30px;
+    text-align: center;
+}
+
+aside {
+    grid-area: aside; /* Ocupa el área 'aside' definida arriba */
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px;
+}
+
+footer {
+    grid-area: footer; /* Ocupa el área 'footer' definida arriba para el lateral*/
+    background-color: #1F4E79;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a { color: #FF6F61; text-decoration: none; }
+
+/* --- ESTILOS APARTADOS PARTICIPANTES --- */
+/* ESTILO DE LA TABLA */
+.tabla-mapa {
+    width: 100%; /* Que ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Une los bordes de las celdas para que se vea limpio */
+    margin-bottom: 40px;
+}
+
+.tabla-mapa th {
+    background-color: #1F4E79; /* Encabezado en azul */
+    color: white;
+    padding: 12px;
+}
+
+.tabla-mapa td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* GRID DE PAÍSES */
+.grid-paises {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Hace que se ajuste la caja automáticamente según el mínimo de píxeles puesto */
+    gap: 20px;
+}
+
+.pais {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #FF6F61; /* Detalle en color Coral */
+}
+
+.pais h3 {
+    color: #1F4E79;
+}
+
+.pais img {
+    width: 100%;
+    aspect-ratio: 3/2; /* Mantiene siempre esa proporción */
+    height: 120px;
+    object-fit: cover; /* Se utiliza para que la imagen no se estire mal */
+}
+
+.pais a {
+    background-color: #FF6F61; /* Botón en coral*/
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.pais a:hover {
+    background-color: #2E8B57; /* Al pasar por el enlace el boton se pone en verde */
+}
+
+/* --- ESTILOS PARA GASTRONOMÍA --- */
+/* Contenedor de cada país */
+.seccion-comida {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+/* Títulos de países con banderas al lado */
+.seccion-comida h2 {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #1F4E79; /* Azul */
+    border-bottom: 2px solid #FF6F61; /* Coral */
+    padding-bottom: 10px;
+}
+
+/* Estilo de la tabla de menús */
+.tabla-menu {
+    width: 100%;
+    border-collapse: collapse; /* Para que se junte los td de las tablas*/
+    margin-top: 10px;
+}
+
+.tabla-menu th {
+    background-color: #2E8B57; /* Verde */
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-menu td {
+    padding: 10px;
+    vertical-align: middle; /* Centra el texto con la imagen */
+}
+
+/* Las fotos de los platos dentro de la tabla */
+.tabla-menu td img {
+    width: 120px;
+    height: 70px;
+}
+
+/* Resaltar el nombre del plato */
+.tabla-menu td strong {
+    color: #1F4E79;
+}
