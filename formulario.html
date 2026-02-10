@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival de las Naciones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Logotipo.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>Festival de las Naciones</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gastronomia.html">Gastronomía</a></li>
+                <li><a href="conciertos.html">Conciertos</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="formulario.html" class="active">Registrate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="section">
+            <h2>Registrate ahora</h2>
+            <form action="http://www.iesjacaranda.es/lmsgi/resultado.php" method="POST">
+    <label for="nombre">Nombre:</label> 
+    <br>
+    <input type="text" id="nombre" name="nombre" required>
+    <br>
+    <label for="email">Correo electrónico:</label>
+    <br>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="password">Constraseña: </label>
+    <br>
+    <input type="password" name="password" id="password" required>
+    <br>
+    <label for="telefono">Nº Telefono:</label>
+    <br>
+    <input type="tel" name="telefono" id="telefono">
+    <br>
+    <label for="dni">DNI:</label>
+    <br>
+    <input type="text" id="dni" name="dni" required>
+    <br>
+
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button><br>
+    <button id="login">Login</button>
+</form>
+        </section>
+
+    </main>
+    <footer>
+        <p>Festival de las Naciones © 2026</p>
+        <p>Trabajo realizado por el grupo</p>
+    </footer>
+
