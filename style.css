@@ -35,25 +35,25 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 14px;
+    padding: 10px 18px;
     border-radius: 6px;
-    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
 }
 
 nav a:hover {
     background-color: #FF6F61;
     color: #FFF8EF;
+    border-color: #FF6F61;
 }
 
+nav a.active,
 nav a:active {
     background-color: #2E8B57;
     color: white;
-    box-shadow: #333 7px 7px 15px;
-}
-nav a.active {
-    background-color: #2E8B57;
-    color: white;
-    
+    border-color: #2E8B57;
+
+    /* EFECTO CLICK SIN MOVER EL BOTÓN */
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.35);
 }
 
 main {
@@ -70,8 +70,6 @@ input{
 button {
     width: 123px;
 }
-
-
 
 .section {
     background-color: white;
@@ -115,6 +113,40 @@ button {
     margin-bottom: 35px;
 }
 
+
+/* TABLES */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 600px;
+}
+
+th, td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1F4E79;
+    color: white;
+    font-size: 1.1rem;
+}
+
+td img {
+    width: 80px;
+    border-radius: 6px;
+}
+
 footer img {
     width: 25px;
     height: auto;
@@ -129,6 +161,28 @@ iframe{
     flex-wrap: wrap;
 }
 
+aside {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 22px 25px;
+    border-left: 6px solid #1F4E79;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+aside h3 {
+    font-size: 1.4rem;
+    color: #1F4E79;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+}
+
 footer {
     background-color: #1F4E79;
     color: white;
@@ -136,6 +190,133 @@ footer {
     padding: 18px;
     margin-top: 40px;
 }
+
+
+/*
+Participantes
+*/
+
+/* TITULO PRINCIPAL */
+#principal h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1F4E79;
+    margin-bottom: 25px;
+}
+
+/* TABLA DE ZONAS */
+.tabla-mapa {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.tabla-mapa caption {
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #1F4E79;
+}
+
+.tabla-mapa th {
+    background-color: #1F4E79;
+    color: white;
+    padding: 14px;
+    font-size: 1.1rem;
+}
+
+.tabla-mapa td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-mapa td img {
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+/* GRID DE PAISES */
+.grid-paises {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.pais {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid #1F4E79;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    text-align: center;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.pais:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.18);
+}
+
+.pais h3 {
+    color: #1F4E79;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.pais img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.pais p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.pais a {
+    display: inline-block;
+    background-color: #1F4E79;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.25s;
+}
+
+.pais a:hover {
+    background-color: #FF6F61;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    #principal h2 {
+        font-size: 1.6rem;
+    }
+
+    .tabla-mapa th,
+    .tabla-mapa td {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .pais {
+        padding: 18px;
+    }
+
+    .pais img {
+        width: 55px;
+    }
+
+    .pais h3 {
+        font-size: 1.2rem;
+    }
+}
+
 
 @media (max-width: 768px) {
     .section h2 {
@@ -170,5 +351,19 @@ footer {
         font-size: 26px;
         height: 240px;
         background-attachment: scroll;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    td img {
+        width: 55px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
