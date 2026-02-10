@@ -10,6 +10,7 @@ body {
     color: #333;
 }
 
+/* HEADER */
 header {
     background-color: #1F4E79;
     color: white;
@@ -22,6 +23,7 @@ header h1 {
     font-size: 2.2rem;
 }
 
+/* NAV */
 nav ul {
     list-style: none;
     display: flex;
@@ -45,34 +47,29 @@ nav a:hover {
     color: #FFF8EF;
 }
 
-nav a:active {
+nav a:active,
+nav a.active {
     background-color: #2E8B57;
     color: white;
     box-shadow: #333 7px 7px 15px;
 }
-nav a.active {
-    background-color: #2E8B57;
-    color: white;
-    
-}
 
+/* MAIN */
 main {
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-input{
+input {
     width: 250px;
 }
-
 
 button {
     width: 123px;
 }
 
-
-
+/* SECTIONS */
 .section {
     background-color: white;
     padding: 28px;
@@ -97,6 +94,7 @@ button {
     font-size: 1rem;
 }
 
+/* PARALLAX */
 .parallax {
     height: 380px;
     background-image: url("/festivalnaciones/images/parallax.png");
@@ -115,20 +113,40 @@ button {
     margin-bottom: 35px;
 }
 
-footer img {
-    width: 25px;
-    height: auto;
-}
-iframe{
-    margin-bottom: 8px;
-    padding-right: 18px;
-    border-radius: 3pc;
-    border-left: #1F4E79;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/* TABLES */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 600px;
+}
+
+th, td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1F4E79;
+    color: white;
+    font-size: 1.1rem;
+}
+
+td img {
+    width: 80px;
+    border-radius: 6px;
+}
+
+/* FOOTER */
 footer {
     background-color: #1F4E79;
     color: white;
@@ -137,7 +155,59 @@ footer {
     margin-top: 40px;
 }
 
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+footer img {
+    width: 25px;
+    height: auto;
+}
+
+/* IFRAME */
+iframe {
+    margin-bottom: 8px;
+    padding-right: 18px;
+    border-radius: 3pc;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+aside {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 22px 25px;
+    border-left: 6px solid #1F4E79;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+aside h3 {
+    font-size: 1.4rem;
+    color: #1F4E79;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+}
+/* RESPONSIVE */
 @media (max-width: 768px) {
+
     .section h2 {
         font-size: 1.5rem;
     }
@@ -145,30 +215,21 @@ footer {
     .parallax {
         font-size: 32px;
         height: 300px;
-    }
-}
-
-@media (min-width: 10, max-width: 480px ) {
-    nav ul {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    header h1 {
-        font-size: 1.6rem;
-    }
-
-    .section h2 {
-        font-size: 1.25rem;
-    }
-
-    .section li {
-        font-size: 0.95rem;
-    }
-
-    .parallax {
-        font-size: 26px;
-        height: 240px;
         background-attachment: scroll;
+    }
+
+    /* TABLAS MÁS LEGIBLES EN MÓVIL */
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    td img {
+        width: 55px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
