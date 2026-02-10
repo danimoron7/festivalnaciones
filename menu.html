@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Festival de Música IA 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+   
+    :root {
+      --bg: #0c2341;
+      --card: #092d38;
+      --primary: #a1a1cc;
+      --secondary: #153046;
+      --text: #f7f7f7;
+   
+    }
+
+
+    * { box-sizing: border-box; }
+
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(124,124,255,.25), transparent 60%),
+        radial-gradient(900px 500px at -10% 20%, rgba(180,108,255,.25), transparent 60%),
+        var(--bg);
+      line-height: 1.6;
+    }
+
+
+    header {
+      padding: 64px 20px 32px;
+      text-align: center;
+    }
+
+
+    .portada {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    
+      font-weight: 700;
+      letter-spacing: .3px;
+      margin-bottom: 12px;
+    }
+
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 10px 0 8px;
+    }
+
+
+    header p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+
+    .cajon {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0)) , var(--card);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(0,0,0,.35);
+      border-color: rgba(124,124,255,.45);
+    }
+
+
+    .card h3 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+
+    .list {
+      padding-left: 18px;
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+
+    .list li { margin: 6px 0; }
+
+
+    .cta {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16px;
+    }
+
+
+    .form {
+      background: linear-gradient(180deg, rgba(124,124,255,.08), rgba(124,124,255,0)), var(--card);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+
+    .form h2 { margin-top: 0; }
+
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+
+    input, select {
+      width: 100%;
+      padding: 12px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: #0c0d1f;
+      color: var(--text);
+      outline: none;
+    }
+
+
+    input::placeholder { color: #7e80b6; }
+
+
+    .btn {
+      margin-top: 14px;
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      font-weight: 800;
+      letter-spacing: .3px;
+      background: linear-gradient(60deg, var(--primary), var(--secondary));
+      color: #0d1a0b;
+    }
+
+
+    .side {
+      display: grid;
+      gap: 12px;
+    }
+
+
+    .highlight {
+      border-left: 4px solid var(--ok);
+      padding-left: 12px;
+      color: var(--muted);
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 28px 20px 40px;
+      color: var(--muted);
+    }
+
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <span class="portada">Festival de las Naciones</span>
+    <h1>Actividades Disponibles</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ex hic, quidem perspiciatis a porro ut nihil facilis, repellat magni quas blanditiis tempore possimus quaerat quasi, voluptas ipsa veniam voluptate?</p>
+  </header>
+
+
+  <main>
+    <section class="cajon">
+      <article class="card">
+        <h3> Conciertos</h3>
+        <ul class="list">
+          <li>Ejemplo (18:00)</li>
+          <li>Ejemplo2(20:00)</li>
+          <li>Ejemplo3 (22:00)</li>
+        </ul>
+      </article>
+
+
+      <article class="card">
+        <h3> Talleres</h3>
+        <ol class="list">
+          <li>Creación musical </li>
+          <li>Actividades Infantiles</li>
+          <li>Escuelas de baile</li>
+        </ol>
+      </article>
+
+
+      <article class="card">
+        <h3> Talento Local</h3>
+        <ul class="list">
+          <li>famoso1</li>
+          <li>famoso2</li>
+          <li>famoso3</li>
+        </ul>
+      </article>
+    </section>
+
+
+    <section class="cta">
+      <div class="form">
+        <h2>Inscripción a actividades</h2>
+
+
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Tu nombre" />
+
+
+        <label for="email">Correo electrónico</label>
+        <input id="email" type="email" placeholder="tucorreo@email.com" />
+
+
+        <label for="actividad">Actividad favorita</label>
+        <select id="actividad">
+          <option>Conciertos</option>
+          <option>Creacion musical</option>
+          <option>Escuelas de baile</option>
+        </select>
+
+
+        <button class="btn" type="button">Inscribirme</button>
+      </div>
+
+
+      <div class="side">
+        <div class="card">
+          <h3> Info rápida</h3>
+          <p class="highlight">Lugar</p>
+          <p class="highlight">Fecha</p>
+          <p class="highlight">Acceso: Entrada general + pulsera</p>
+        </div>
+
+
+        <div class="card">
+          <h3> Qué te llevas</h3>
+          <ul class="list">
+            <li>Experiencias inmersivas</li>
+            <li>Viaje cultural</li>
+            <li>regalos especiales</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>Pie de pagina </p>
+  </footer>
+</body>
+</html>
