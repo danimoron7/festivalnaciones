@@ -33,30 +33,57 @@
     <label for="nombre">Nombre:</label> 
     <br>
     <input type="text" id="nombre" name="nombre" required placeholder="nombre...">
-    <br>
+    <br><br>
     <label for="email">Correo electrónico:</label>
     <br>
     <input type="email" id="email" name="email" required  required placeholder="email...">
-    <br>
-    <label for="password">Constraseña: </label>
+    <br><br>
+    <label for="password">Contraseña: </label>
     <br>
     <input type="password" name="password" id="password" required  required placeholder="contraseña...">
+    <br><br>
+    <label for="password2">Repite la Contraseña: </label>
     <br>
+    <input type="password" name="password" id="password" required  required placeholder="contraseña...">
+    <br><br>
     <label for="telefono">Nº Telefono:</label>
     <br>
-    <input type="tel" name="telefono" id="telefono...">
-    <br>
+    <input type="tel" name="telefono" id="telefono..." pattern="[0-9]{9}">
+    <br><br>
     <label for="dni">DNI:</label>
     <br>
-    <input type="text" id="dni" name="dni" required>
+    <input type="text" id="dni" name="dni" required required placeholder="dni..." pattern="[0-9]{8}[A-Za-z]">
+    <br><br>
+    <label for="fecha"> Fecha de nacimiento:</label>
     <br>
-
+    <input type="date" id="fecha" name="fecha" required required placeholder="fecha...">
+    <br><br>
+    <label for="entrada">Tipo de entrada:</label>
+    <select id="entrada" name="entrada">
+        <option value="general">General</option>
+        <option value="vip">VIP</option>
+        <option value="infantil">Infantil</option>
+    </select>
+    <br><br>
+    <label>¿Qué te interesa más?</label><br>
+    <input type="checkbox" name="intereses" value="conciertos"> Conciertos
+    <input type="checkbox" name="intereses" value="gastronomia"> Gastronomía        
+    <input type="checkbox" name="intereses" value="actividades"> Actividades
+    <br><br>
+    <p>Deseo recibir información del festival</p>
+    <input type="checkbox" name="newsletter">
+    
+    <br><br>
+    <p>Acepto la política de privacidad y las condiciones legales</p>
+    <input type="checkbox" name="condiciones" required>
+    <br><br> 
 
     <button type="submit">Enviar</button>
     <button type="reset">Borrar</button><br>
     <button id="login">Login</button>
+    <br><br>
 </form>
-        </section>
+    </section>
 
     </main>
 
@@ -65,7 +92,7 @@
             <ul>
                 <li><a href="https://www.facebook.com/festivaldelasnaciones/" target="_blank"><img src="images/rrss/fb.png" alt="facebook"></a>Facebook</li>
                 <li><a href="https://twitter.com/festinaciones" target="_blank"> <img src="images/rrss/x.png" alt="twitter"></a>Twitter</li>
-                <li><a href="https://www.instagram.com/festivaldelasnaciones/" target="_blank"><img src="img/rrss/ig.png" alt="instagram"></a>Instagram</li>
+                <li><a href="https://www.instagram.com/festivaldelasnaciones/" target="_blank"><img src="images/rrss/ig.png" alt="instagram"></a>Instagram</li>
                 <li><a href="https://www.youtube.com/@festivaldelasnaciones5535/videos" target="_blank"><img src="images/rrss/yt.png" alt="youtube"></a>Youtube</li>
                 <li><a href="mailto:info@festivaldelasnaciones.es" target="_blank"></a>info@festivaldelasnaciones.es</li>
             </ul>

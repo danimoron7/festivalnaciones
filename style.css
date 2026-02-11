@@ -191,6 +191,152 @@ footer {
     margin-top: 40px;
 }
 
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.checkbox-group label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+label.inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.botones {
+    margin-top: 10px;
+}
+
+.botones button {
+    margin-right: 10px;
+}
+
+.bento-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*4 columnas repartidas de forma y ajuste proporcional (fr)*/
+    grid-auto-rows: 200px; /*altura fija en filas (row)*/
+    gap: 20px; /*espacio entre deldas*/
+    padding: 20px;
+/*  background-color: var(--color-destacado-verde);  /*quitar tras ajustar css*/
+
+    
+}
+
+.foto{
+    position: relative; /*para el posicionamiento sobre la caja*/
+    border-radius: 20px;
+    overflow: hidden; /*oculta el sobrante de la imagen evitando que sobresalga de la celda*/
+/*
+    border-style: solid; /*quitar tras ajustar css*/
+/*  border-color: var(--color-destacado-naranja); /*quitar tras ajustar css*/
+
+}
+
+.grande{/*Ocupa 2 columnas (ancho) y 2 filas (alto)*/
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.alto{/*Ocupa 2 filas (alto) y solo 1 columna*/
+    grid-row: span 2;
+}
+
+.ancho{ /*Ocupa 2 columnas (ancho) y solo 1 fila*/
+    grid-column: span 2;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    /*Para que respete la proporcion de la foto.
+    Sin esta propiedad la foto se deforma al obligarla que ocupe el 100% de la caja*/
+    display: block;
+    transition: transform 0.5s ease; /*Transicion para el efecto zoom*/
+}
+
+.bento-grid>:hover img{
+        transform: scale(1.15); /*Efecto zoom*/
+}
+.nombre {
+    position: absolute; /*Para que se ajuste el relative en .foto*/
+    display: flex; /*Para poder alinear el nombre del artista*/
+    justify-content: center; /*centra horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+    text-align: center; /*centra texto multilinea*/
+
+    /*Tamaño cvon clamp: mínimo(movil), preferido(vw tamaño viewport) y máximo*/
+    font-size: clamp(2rem, 8vw, 4.5rem); 
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word; /*Por si el nombre es muy largo*/
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background: rgba(31, 78, 121, 0.4); /*con la variable no admite la transparencia*/
+    backdrop-filter: blur(10px); /*efecto difuminado*/
+    color: var(--color-base);
+    font-family: var(--fuente-titulos);
+    opacity: 0;
+    transition: opacity 0.6s ease; /*animaciñon sobre la transparencia*/
+}
+.nombre > a{
+    text-decoration: none;
+}
+
+.foto:hover .nombre {
+    opacity: 1; 
+    transform: translateY(0);
+    align-items: center;
+}
+
+footer a img{
+    width: 50px;
+}
+/*En @media SIEMPRE em y NUNCA rem, el navegador usa siempre la fuente por defecto
+y además son consultas evaluado por el navegador antes de aplicar el CSS
+Lo media queries SIEMPRE van al final del CSS para que no los pisen otras instrucciones
+    
+    Para un estilo bento-grid de 4 columnas:
+        1. Mobil (base) = 1 columna
+        2. Tablet (768px) = 2 columnas
+        3. Deskpot(1024px) = 4 columnas
+*/
+@media (max-width: 768px){
+    .bento-grid{
+        grid-template-columns: 1fr; /*Aplia el estilo 1 sola columna para móvil*/
+        grid-auto-rows: 250px;
+    }
+    .foto, .grande, .alto, .ancho{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
 
 /*
 Participantes
