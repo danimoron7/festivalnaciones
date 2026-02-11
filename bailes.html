@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Danza y Escuelas de baile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg: #0f1020;
+      --card: #17182f;
+      --primary: #7c7cff;
+      --text: #e9e9ff;
+      --muted: #b7b7e0;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(1200px 600px at 10% -10%, #1b1c44, transparent),
+                  linear-gradient(180deg, #0f1020, #0b0c1a);
+      color: var(--text);
+      padding: 24px;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto 24px;
+      display: grid;
+      gap: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.3px;
+    }
+
+    .back {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      width: fit-content;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      gap: 24px;
+    }
+
+    .section {
+      background: linear-gradient(180deg, #1a1b38, #14152b);
+      border: 1px solid rgba(124,124,255,0.15);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    /* Galería de 2 fotos */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    .photo {
+      height: 300px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #2a2b55, #1a1b38);
+      border: 1px dashed rgba(124,124,255,0.35);
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-weight: 600;
+      text-align: center;
+      padding: 12px;
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 32px auto 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="actividadesMenu.html" class="back">⬅ Volver a actividades</a>
+    <h1>Danza y escuelas de baile</h1>
+   
+  </header>
+
+  <main class="container">
+
+    <section class="section">
+      <h2>Flamenco</h2>
+      <div class="gallery">
+        <div class="photo"><img src="fotos/fla.jpg" class="photo" alt="Taller creativo infantil"></div>
+        <div class="photo"><img src="fotos/fla.2.webp" class="photo" alt="Taller creativo infantil"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Bailes latinos</h2>
+      <div class="gallery">
+        <div class="photo"><img src="fotos/la1.jpg" class="photo" alt="Taller creativo infantil"></div>
+        <div class="photo"><img src="fotos/lati2.jpg" class="photo" alt="Taller creativo infantil"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Danza internacional</h2>
+      <div class="gallery">
+        <div class="photo"><img src="fotos/festi1.jpg" class="photo" alt="Taller creativo infantil"></div>
+        <div class="photo"><img src="fotos/festi2.jpg" class="photo" alt="Taller creativo infantil"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Festival de las Naciones · Sevilla · Danza y baile
+  </footer>
+
+</body>
+</html>

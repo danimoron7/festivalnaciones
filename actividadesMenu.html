@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Festival de Música IA 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    
+    :root {
+      --bg: #091e3a;
+      --card: #479483;
+      --primary: #7c7cff;
+      --secondary: #b46cff;
+      --text: #f7f7f7;
+    
+    }
+    #logo {
+  width: 120px;
+  height: auto;
+}
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(124,124,255,.25), transparent 60%),
+        radial-gradient(900px 500px at -10% 20%, rgba(180,108,255,.25), transparent 60%),
+        var(--bg);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 64px 20px 32px;
+      text-align: center;
+    }
+
+    .portada {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      color: #0b0c1a;
+      font-weight: 700;
+      letter-spacing: .3px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 10px 0 8px;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .cajon {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0)) , var(--card);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(0,0,0,.35);
+      border-color: rgba(124,124,255,.45);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .list {
+      padding-left: 18px;
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .list li { margin: 6px 0; }
+
+    .cta {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16px;
+    }
+
+    .form {
+      background: linear-gradient(180deg, rgba(124,124,255,.08), rgba(124,124,255,0)), var(--card);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .form h2 { margin-top: 0; }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: #0c0d1f;
+      color: var(--text);
+      outline: none;
+    }
+
+    input::placeholder { color: #7e80b6; }
+
+    .btn {
+      margin-top: 14px;
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      font-weight: 800;
+      letter-spacing: .3px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      color: #0d1a0b;
+    }
+
+    .side {
+      display: grid;
+      gap: 12px;
+    }
+
+    .highlight {
+      border-left: 4px solid var(--ok);
+      padding-left: 12px;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 20px 40px;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .card-link {
+  text-decoration: none; /* quita el subrayado */
+  color: inherit;        /* mantiene el color del texto */
+  display: block;       /* hace que el enlace ocupe toda la card */
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <span class="portada">  <img src="logo_feriaNaciones.png" alt="Logotipo oficial del Festival" id="logo"></span>
+    <h1>Actividades Disponibles</h1>
+    <p>Este festibal cuenta con un escenario principal con actuaciones diarias, exhibiciones de baile y danza, actividades para los pequeños y productos artesanales. Podremos seguir informandonos de ellos a continuación</p>
+  </header>
+
+  <main>
+    <section class="cajon">
+      <a href="gastronomia.html" class="card-link">
+  <article class="card">
+    <h3>Gastronomía internacional</h3>
+    <ul class="list">
+      <li>Una de las actividades centrales del Festival la degustación de comidas y bebidas del mundo</li>
+      <li>Stands de más de 30–50 países donde se podían probar platos típicos y bebidas</li>
+      <li>Tapas, dulces, cervezas y vinos de diferentes regiones</li>
+      <li>Horario: 10:00-16:30 / 20:00-23:30</li>
+    </ul>
+  </article>
+</a>
+<a href="danza.html" class="card-link">
+      <article class="card">
+        <h3> Danza y escuelas de baile</h3>
+        <ul class="list">
+          <li>Se incorporaban exhibiciones de baile y danza como parte de la programación</li>
+          <li>Escuelas de baile de Sevilla actuaban con flamenco, bailes latinos, swing, danza moderna</li>
+          <li>Talleres y actividades participativas</li>
+          <li>Horario: 19:00-22:00</li>
+        </ul>
+      </article>
+  </a>
+<a href="actividadesInfantiles.html" class="card-link">
+      <article class="card">
+        <h3> Actividades infantiles y “Festival Kids”</h3>
+        <ul class="list">
+          <li>Espectáculos infantiles de magia, animación y cuentacuentos</li>
+          <li>Actividades destinadas a las familias para que los niños disfrutaran con seguridad</li>
+          <li>Concurso de remix</li>
+          <li>Horario: 12:00-15:30</li>
+        </ul>
+      </article>
+    </a>
+    </section>
+
+    <section class="cta">
+      <div class="form">
+        <h2>Inscripción a actividades</h2>
+
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Tu nombre" />
+
+        <label for="email">Correo electrónico</label>
+        <input id="email" type="email" placeholder="tucorreo@email.com" />
+
+        <label for="actividad">Actividad a la que quieras apuntarte</label>
+        <select id="actividad">
+          <option> Actividades infantiles y “Festival Kids”</option>
+          <option>Danza y escuelas de baile</option>
+          <option>Gastronomía internacional</option>
+        </select>
+
+        <button class="btn" type="button">Inscribirme</button>
+      </div>
+
+      <div class="side">
+        <div class="card">
+         
+          <h3>Mercadillo y artesania</h3>
+              <ul class="list">
+          <li>Un mercado con artesanía, productos típicos y curiosidades del mundo</li>
+          <li>Horario: 16:00-20:00</li>
+
+        </ul>
+          
+        </div>
+      
+        <div class="card">
+      
+          <h3> Premios Solidarios</h3>
+          <ul class="list">
+            <li>El Festival también tenía un componente social y benéfico</li>
+            <li>Se organizaba la gala de los Premios Solidarios, donde se reconocía la labor de personas o entidades con impacto social</li>
+            <li>Horario: 19:00-20:00</li>
+         
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+   <p>Festival de las Naciones &copy; 2026 </p>
+       
+        <p>Trabajo realizado por el grupo</p>
+  </footer>
+</body>
+</html>
