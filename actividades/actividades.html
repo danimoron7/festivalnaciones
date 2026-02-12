@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apartado de conciertos de la web Festival de las naciones">
+    <meta name="keywords" content="Festival de las naciones, Sevilla, Conciertos">
+    <meta name="author" content="Enrique Limones">
+    <title>Conciertos</title>
+
+    <!-- Fuente importada de google SIEMPRE antes que la hoja de estilo.
+    (@import bloquea la descarga del resto de CSS). Ante problemas de descarga usa una fuente predefinida (evita efecto página en blanco)
+    TEXTO CUERPO - LECTURA
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    FUENTE DISPLAY - ENCABEZADOS & TÍTULOS
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    -->
+
+    <!-- FUENTES DEL DOC (ACOPLADAS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@750&display=swap" rel="stylesheet">
+
+    <!-- HOJA DE ESTILO -->
+    <link rel="stylesheet" href="style-reset-grid.css">
+    <!--Definir CSS con media queries mobile-first 
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="stylesheet" href="print.css" media="screen and (min-width: 600px)"> -->
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <header>
+        <!-- Enlace a index vía logotipo -->
+        <a href="index.html">
+            <img src="logo_feriaNaciones.svg" alt="Logo Feria de las Naciones - Inicio" width="110px">  <!-- quitar width cuando pongas el css -->
+        </a>
+        <h1>ACTIVIDADES</h1>
+        <!-- Formulario de búsqueda por la web -->
+        <form action="/buscar" method="get">
+            <input type="search" name="busqueda" placeholder="Buscar">
+
+    </header>
+     <!-- PRINCIPAL -->
+    <main>
+        <!-- SECCIÓN PRINCIPAL infantil y taller de baile, lo ideal es que ambas secciones floten una al lado de la otra -->
+         <section>
+            <h2> TALLER DE DANZA</h2>
+            <br>
+            <p><em>Ven y disfruta de los espectaculos de danza y participa en los talleres para aprender los pasos de baile que te ayudarán a triunfar en la pista</em></p>
+            <br>
+                <article>
+                    <h3>FLAMENCO</h3>
+                    <div>
+                        <img src="img/flamenco.jpg" alt="baile flamenco">
+                            <p></p>
+                    </div>
+                </article>
+                <article>
+                    <h3>BAILE LATINO</h3>
+                    <div>
+                        <img src="img/latino.jpg" alt="baile latino">
+                            <p></p>
+                    </div>
+                </article>
+                <article>
+                    <h3>DANZA INTERNACIONAL</h3>
+                    <div>
+                        <img src="img/internacional.jpg" alt="baile internacional, danza del vientre">
+                            <p></p>
+                    </div>
+                </article>
+         </section>
+         <section>
+            <h2>INFANTIL</h2>
+                <article>
+                    <h3>TALLER CREATIVO</h3>
+                    <div>
+                        <img src="img/taller.jpg" alt="taller creativo">
+                            <p>Actividades destinadas a padres y niños para que jueguen y aprendan divirtiéndose de diferentes culturas</p>
+                    </div>
+                </article>
+                <article>
+                    <h3>CUENTACUENTOS</h3>
+                    <div>
+                        <img src="img/cuentacuento.jpg" alt="cuentacuentos">
+                            <p>Ven y disfruta con los <em>cuentacuentos</em> de las mejoras obras internacionales adaptadas para el público más joven <br> <strong><em><h5>Los peques</h5></em></strong>.</p>
+                    </div>
+                </article>
+                <article>
+                    <h3>JUEGOS Y ANIMACIÓN</h3>
+                    <div>
+                        <img src="img/animacion.jpeg" alt="equipo de animación">
+                            <p>Jugaremos y aprenderemos en una tarde lúdica con los juegos clásicos más populares de toda la vida de diferentes países y culturas.</p>
+                    </div>
+                </article>
+         </section>
+    </main>
+
+</body>
+</html>
