@@ -383,6 +383,36 @@ Participantes
     margin-left: 6px;
 }
 
+/* Actividades*/
+/* --- FOTOS DE ACTIVIDADES --- */
+.actividad-foto {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.actividad-foto img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .actividad-foto img {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .actividad-foto img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+}
+
 /* GRID DE PAISES */
 .grid-paises {
     display: grid;

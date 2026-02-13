@@ -5,27 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festival de las Naciones</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/proyecto/favicon.ico">
+    <link rel="icon" type="image/png" href="images/logo_feriaNaciones.svg">
 </head>
 
 <body>
 
     <header>
+            <img src="images/logo_feriaNaciones.png" alt="Logotipo oficial del Festival" id="logo" width="100">
         <h1>Festival de las Naciones</h1>
         <nav>
             <ul id="menu">
-                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="gastronomia.html">Gastronomía</a></li>
                 <li><a href="conciertos.html">Conciertos</a></li>
                 <li><a href="participantes.html">Participantes</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="informacion.html" class="active">Información</a></li>
+                <li><a href="actividades.html" >Actividades</a></li>
                 <li><a href="formulario.html">Registrate</a></li>
+                <li><a href="iniciosesion.html" class="active">Inicio Sesion</a></li>
             </ul>
         </nav>
     </header>
 
-    <footer>
+    <form action="http://www.iesjacaranda.es/lmsgi/resultado.php" method="get">
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required placeholder="nombre...">
+        <br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required placeholder="email...">
+        <br><br>
+
+        <label for="password1">Contraseña:</label><br>
+        <input type="password" name="password1" id="password1" required placeholder="contraseña...">
+        <br><br>
+        <p>Acepto la política de privacidad y las condiciones legales</p>
+        <input type="checkbox" name="condiciones" required>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        <br><br>
+
+
+    </form>
+
+
+        <footer>
         <nav>
             <ul>
                 <li><a href="https://www.facebook.com/festivaldelasnaciones/" target="_blank"><img src="images/rrss/fb.png" alt="facebook"></a>Facebook</li>
