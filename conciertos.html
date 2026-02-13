@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apartado de conciertos de la web Festival de las naciones">
+    <meta name="keywords" content="Festival de las naciones, Sevilla, Conciertos">
+    <meta name="author" content="Enrique Limones">
+    <title>Conciertos</title>
+
+    <!-- Fuente importada de google SIEMPRE antes que la hoja de estilo.
+    (@import bloquea la descarga del resto de CSS). Ante problemas de descarga usa una fuente predefinida (evita efecto página en blanco)
+    TEXTO CUERPO - LECTURA
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    FUENTE DISPLAY - ENCABEZADOS & TÍTULOS
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    -->
+
+    <!-- FUENTES DEL DOC (ACOPLADAS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@750&display=swap" rel="stylesheet">
+
+    <!-- HOJA DE ESTILO -->
+    <link rel="stylesheet" href="style.css">
+    <!--Definir CSS con media queries mobile-first 
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="stylesheet" href="print.css" media="screen and (min-width: 600px)"> -->
+</head>
+
+<body>
+    <header>
+            <img src="images/logo_feriaNaciones.png" alt="Logotipo oficial del Festival" id="logo" width="100">
+        <h1>Festival de las Naciones</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gastronomia.html">Gastronomía</a></li>
+                <li><a href="conciertos.html" class="active">Conciertos</a></li>
+                <li><a href="participantes.html" >Participantes</a></li>
+                <li><a href="actividades.html" >Actividades</a></li>
+                <li><a href="formulario.html">Registrate</a></li>
+                <li><a href="iniciosesion.html">Inicia Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- PRINCIPAL -->
+    <main>
+        <!-- SECCIÓN PRINCIPAL (IMAGEN + TARIFAS) -->
+        <section class="bento-grid">
+            <div class="foto grande">
+                <img src="images/artist/amaia.jpg" alt="Amaia">
+                <div class="nombre">
+                    <a href="https://amaiaromeroarbizu.com/" target="_blank"><h2>Amaia</h2></a>
+                </div>
+            </div>
+            <div class="foto ancho"><img src="images/artist/guitarricadelafuente.jpg" alt="Alvaro Lafuente - Guitarricadelafuente">
+                <div class="nombre">
+                    <a href="https://guitarricadelafuente.com/" target="_blank"><h2>Guitarrica delafuente</h2></a>
+                </div>
+            </div>
+            <div class="foto"><img src="images/artist/pastora.jpg" alt="Pastora Soler">
+                <div class="nombre">
+                    <a href="https://www.pastorasoleroficial.es/" target="_blank"><h3>Pastora Soler</h3></a>
+                </div>
+            </div>
+            <div class="foto alto"><img src="images/artist/chenoa.jpg" alt="Chenoa">
+                <div class="nombre">
+                    <a href="https://chenoa.net/" target="_blank"><h3>Chenoa</h3></a>
+                </div>
+            </div>
+            <div class="foto ancho"><img src="images/artist/lola-indigo.jpg" alt="Lola Índigo">
+                <div class="nombre">
+                    <a href="https://lolaindigomusic.com/" target="_blank"><h3>Lola Índigo</h3></a>
+                </div>
+            </div>
+            <div class="foto"><img src="images/artist/juan-magan.jpg" alt="Juan Magan">
+                <div class="nombre">
+                    <a href="https://juanmagan.es/" target="_blank"><h3>Juan Magán</h3></a>
+                </div>
+            </div>
+            <div class="foto alto"><img src="images/artist/luna-ki.jpg" alt="Luna Ki">
+                <div class="nombre">
+                    <a href="https://www.youtube.com/@LUNAKIMUSIC" target="_blank"><h3>Luna Ki</h3></a>
+                </div>
+            </div>
+            <div class="foto ancho"><img src="images/artist/almacor.jpg" alt="Almacor">
+                <div class="nombre">
+                    <a href="https://www.youtube.com/channel/UC-BSUWohDuF4s9XA-D07tlA" target="_blank"><h3>Almacor</h3></a>
+                </div>
+            </div>
+            <div class="foto alto"><img src="images/artist/quevedo.jpg" alt="Quevedo">
+                <div class="nombre">
+                    <a href="https://www.quevedoyouknow.com/" target="_blank"><h3>Quevedo</h3></a>
+                </div>
+            </div>
+            <div class="foto grande"><img src="images/artist/rigoberta.jpg" alt="Rigoberta Bandini">
+                <div class="nombre">
+                    <a href="https://rigobertabandini.es/" target="_blank"><h3>Rigoberta Bandini</h3></a>
+                </div>
+            </div>
+            <div class="foto"><img src="images/artist/dani-fernandez.jpeg" alt="Dani Fernandez">
+                <div class="nombre">
+                    <a href="https://danifernandezoficial.es/" target="_blank"><h3>Dani Fernández</h3></a>
+                </div>
+            </div>
+            <div class="foto"><img src="images/artist/hungara.jpg" alt="La Húngara">
+                <div class="nombre">
+                    <a href="https://www.lahungara.net/" target="_blank"><h3>La Húngara</h3></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- PIE DE PÁGINA (ENLACES RR. SS. + CORREO) -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://www.facebook.com/festivaldelasnaciones/" target="_blank"><img src="images/rrss/fb.png" alt="facebook"></a></li>
+                <li><a href="https://twitter.com/festinaciones" target="_blank"> <img src="images/rrss/x.png" alt="twitter"></a></li>
+                <li><a href="https://www.instagram.com/festivaldelasnaciones/" target="_blank"><img src="images/rrss/ig.png" alt="instagram"></a></li>
+                <li><a href="https://www.youtube.com/@festivaldelasnaciones5535/videos" target="_blank"><img src="images/rrss/yt.png" alt="youtube"></a></li>
+                <li><a href="mailto:info@festivaldelasnaciones.es" target="_blank"></a>info@festivaldelasnaciones.es</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

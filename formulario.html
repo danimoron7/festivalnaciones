@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival de las Naciones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo_feriaNaciones.svg">
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo_feriaNaciones.png" alt="Logotipo oficial del Festival" id="logo" width="100">
+    <h1>Festival de las Naciones</h1>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="gastronomia.html">Gastronomía</a></li>
+            <li><a href="conciertos.html">Conciertos</a></li>
+            <li><a href="participantes.html">Participantes</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="formulario.html" class="active">Regístrate</a></li>
+            <li><a href="iniciosesion.html">Inicia Sesión</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="section">
+    <h2>Regístrate ahora</h2>
+
+
+    <form action="http://www.iesjacaranda.es/lmsgi/resultado.php" method="get">
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required placeholder="nombre...">
+        <br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required placeholder="email...">
+        <br><br>
+
+        <label for="password1">Contraseña:</label><br>
+        <input type="password" name="password1" id="password1" required placeholder="contraseña...">
+        <br><br>
+
+        <label for="password2">Repite la contraseña:</label><br>
+        <input type="password" name="password2" id="password2" required placeholder="contraseña...">
+        <br><br>
+
+        <label for="telefono">Nº Teléfono:</label><br>
+        <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}">
+        <br><br>
+
+        <label for="dni">DNI:</label><br>
+        <input type="text" id="dni" name="dni" required placeholder="dni..." pattern="[0-9]{8}[A-Za-z]">
+        <br><br>
+
+        <label for="fecha">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha" required>
+        <br><br>
+
+        <label for="entrada">Tipo de entrada:</label><br>
+        <select id="entrada" name="entrada">
+            <option value="general">General</option>
+            <option value="vip">VIP</option>
+            <option value="infantil">Infantil</option>
+        </select>
+        <br><br>
+
+        <label>¿Qué te interesa más?</label><br>
+        <input type="checkbox" name="intereses" value="conciertos"> Conciertos
+        <input type="checkbox" name="intereses" value="gastronomia"> Gastronomía
+        <input type="checkbox" name="intereses" value="actividades"> Actividades
+        <br><br>
+
+        <p>Deseo recibir información del festival</p>
+        <input type="checkbox" name="newsletter">
+        <br><br>
+
+        <p>Acepto la política de privacidad y las condiciones legales</p>
+        <input type="checkbox" name="condiciones" required>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        <br><br>
+
+        <a id="login" href="iniciosesion.html" class="boton-login">Login</a>
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="https://www.facebook.com/festivaldelasnaciones/" target="_blank"><img src="images/rrss/fb.png" alt="facebook"></a>Facebook</li>
+            <li><a href="https://twitter.com/festinaciones" target="_blank"><img src="images/rrss/x.png" alt="twitter"></a>Twitter</li>
+            <li><a href="https://www.instagram.com/festivaldelasnaciones/" target="_blank"><img src="images/rrss/ig.png" alt="instagram"></a>Instagram</li>
+            <li><a href="https://www.youtube.com/@festivaldelasnaciones5535/videos" target="_blank"><img src="images/rrss/yt.png" alt="youtube"></a>Youtube</li>
+            <li><a href="mailto:info@festivaldelasnaciones.es" target="_blank">info@festivaldelasnaciones.es</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #FFF8EF;
+    color: #333;
+}
+
+header {
+    background-color: #1F4E79;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px 0;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #FF6F61;
+    color: #FFF8EF;
+    border-color: #FF6F61;
+}
+
+nav a.active,
+nav a:active {
+    background-color: #2E8B57;
+    color: white;
+    border-color: #2E8B57;
+
+    /* EFECTO CLICK SIN MOVER EL BOTÓN */
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.35);
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+input{
+    width: 250px;
+}
+
+
+button {
+    width: 123px;
+}
+
+.section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    border-left: 6px solid #1F4E79;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: #1F4E79;
+    font-size: 1.8rem;
+}
+
+.section ul {
+    margin-left: 20px;
+}
+
+.section li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.parallax {
+    height: 380px;
+    background-image: url("/festivalnaciones/images/parallax.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 46px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    margin-bottom: 35px;
+}
+
+
+/* TABLES */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 600px;
+}
+
+th, td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1F4E79;
+    color: white;
+    font-size: 1.1rem;
+}
+
+td img {
+    width: 80px;
+    border-radius: 6px;
+}
+
+footer img {
+    width: 25px;
+    height: auto;
+}
+iframe{
+    margin-bottom: 8px;
+    padding-right: 18px;
+    border-radius: 3pc;
+    border-left: #1F4E79;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+aside {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 22px 25px;
+    border-left: 6px solid #1F4E79;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+aside h3 {
+    font-size: 1.4rem;
+    color: #1F4E79;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+footer {
+    background-color: #1F4E79;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.checkbox-group label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+label.inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.botones {
+    margin-top: 10px;
+}
+
+.botones button {
+    margin-right: 10px;
+}
+
+.bento-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*4 columnas repartidas de forma y ajuste proporcional (fr)*/
+    grid-auto-rows: 200px; /*altura fija en filas (row)*/
+    gap: 20px; /*espacio entre deldas*/
+    padding: 20px;
+/*  background-color: var(--color-destacado-verde);  /*quitar tras ajustar css*/
+
+    
+}
+
+.foto{
+    position: relative; /*para el posicionamiento sobre la caja*/
+    border-radius: 20px;
+    overflow: hidden; /*oculta el sobrante de la imagen evitando que sobresalga de la celda*/
+/*
+    border-style: solid; /*quitar tras ajustar css*/
+/*  border-color: var(--color-destacado-naranja); /*quitar tras ajustar css*/
+
+}
+
+.grande{/*Ocupa 2 columnas (ancho) y 2 filas (alto)*/
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.alto{/*Ocupa 2 filas (alto) y solo 1 columna*/
+    grid-row: span 2;
+}
+
+.ancho{ /*Ocupa 2 columnas (ancho) y solo 1 fila*/
+    grid-column: span 2;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    /*Para que respete la proporcion de la foto.
+    Sin esta propiedad la foto se deforma al obligarla que ocupe el 100% de la caja*/
+    display: block;
+    transition: transform 0.5s ease; /*Transicion para el efecto zoom*/
+}
+
+.bento-grid>:hover img{
+        transform: scale(1.15); /*Efecto zoom*/
+}
+.nombre {
+    position: absolute; /*Para que se ajuste el relative en .foto*/
+    display: flex; /*Para poder alinear el nombre del artista*/
+    justify-content: center; /*centra horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+    text-align: center; /*centra texto multilinea*/
+
+    /*Tamaño cvon clamp: mínimo(movil), preferido(vw tamaño viewport) y máximo*/
+    font-size: clamp(2rem, 8vw, 4.5rem); 
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word; /*Por si el nombre es muy largo*/
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background: rgba(31, 78, 121, 0.4); /*con la variable no admite la transparencia*/
+    backdrop-filter: blur(10px); /*efecto difuminado*/
+    color: var(--color-base);
+    font-family: var(--fuente-titulos);
+    opacity: 0;
+    transition: opacity 0.6s ease; /*animaciñon sobre la transparencia*/
+}
+.nombre > a{
+    text-decoration: none;
+}
+
+.foto:hover .nombre {
+    opacity: 1; 
+    transform: translateY(0);
+    align-items: center;
+}
+
+footer a img{
+    width: 50px;
+}
+/*En @media SIEMPRE em y NUNCA rem, el navegador usa siempre la fuente por defecto
+y además son consultas evaluado por el navegador antes de aplicar el CSS
+Lo media queries SIEMPRE van al final del CSS para que no los pisen otras instrucciones
+    
+    Para un estilo bento-grid de 4 columnas:
+        1. Mobil (base) = 1 columna
+        2. Tablet (768px) = 2 columnas
+        3. Deskpot(1024px) = 4 columnas
+*/
+@media (max-width: 768px){
+    .bento-grid{
+        grid-template-columns: 1fr; /*Aplia el estilo 1 sola columna para móvil*/
+        grid-auto-rows: 250px;
+    }
+    .foto, .grande, .alto, .ancho{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/*
+Participantes
+*/
+
+/* TITULO PRINCIPAL */
+#principal h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1F4E79;
+    margin-bottom: 25px;
+}
+
+/* TABLA DE ZONAS */
+.tabla-mapa {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.tabla-mapa caption {
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #1F4E79;
+}
+
+.tabla-mapa th {
+    background-color: #1F4E79;
+    color: white;
+    padding: 14px;
+    font-size: 1.1rem;
+}
+
+.tabla-mapa td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-mapa td img {
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+/* Actividades*/
+/* --- FOTOS DE ACTIVIDADES --- */
+.actividad-foto {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.actividad-foto img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .actividad-foto img {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .actividad-foto img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+}
+
+/* GRID DE PAISES */
+.grid-paises {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.pais {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid #1F4E79;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    text-align: center;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.pais:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.18);
+}
+
+.pais h3 {
+    color: #1F4E79;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.pais img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.pais p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.pais a {
+    display: inline-block;
+    background-color: #1F4E79;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.25s;
+}
+
+.pais a:hover {
+    background-color: #FF6F61;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    #principal h2 {
+        font-size: 1.6rem;
+    }
+
+    .tabla-mapa th,
+    .tabla-mapa td {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .pais {
+        padding: 18px;
+    }
+
+    .pais img {
+        width: 55px;
+    }
+
+    .pais h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .parallax {
+        font-size: 32px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 10, max-width: 480px ) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .section h2 {
+        font-size: 1.25rem;
+    }
+
+    .section li {
+        font-size: 0.95rem;
+    }
+
+    .parallax {
+        font-size: 26px;
+        height: 240px;
+        background-attachment: scroll;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    td img {
+        width: 55px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
